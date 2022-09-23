@@ -22,4 +22,6 @@ int main(){
         x2=sqrt(-d)/(2*a);
         printf("Roots are = %.2f+i%.2f and %.2f-i%.2f\n", x1,x2,x1,x2);
     }
+    return 0;
+
 }

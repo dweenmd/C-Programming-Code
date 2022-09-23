@@ -12,14 +12,14 @@ int main(){
         printf("x1 = %.2f, X2 = %.2f\n", x1,x2);
     }
     else if (d=0){
-        x1=(-b/(2*a));
-        printf("x1 = %.2f, X2 = %.2f\n", x1,x1);
+        x1=x2=(-b/(2*a));
+        printf("x1 = %.2f, X2 = %.2f\n", x1,x2);
     }
     
     else{
-        x1=(-b/(2*a));
-
+        x1=x2=(-b/(2*a));
         x2=sqrt(-d)/(2*a);
+        
         printf("Roots are = %.2f+i%.2f and %.2f-i%.2f\n", x1,x2,x1,x2);
     }
     return 0;
