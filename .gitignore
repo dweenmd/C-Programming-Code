@@ -10,7 +10,6 @@
 # Precompiled Headers
 *.gch
 *.pch
-*.rafi
 
 # Compiled Dynamic libraries
 *.so
