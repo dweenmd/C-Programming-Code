@@ -2,8 +2,6 @@
 #include<stdio.h>
 int main(){
 
-
-
     //int roll[10];
     int roll[10];
     // for loop for input...
