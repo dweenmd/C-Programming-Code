@@ -8,7 +8,7 @@ int main(){
     for(int i=0;i<size-1;i++){// Outer loop for steps
        for(int j=0;j<size-i-1;j++){ //Inner loop for comparison and swap
         if(arr[j]>arr[j+1]){
-            int temp= arr[j]; // swap 
+            int temp= arr[j]; // swap teo numbers
             arr[j]=arr[j+1];
             arr[j+1]=temp;
         }
