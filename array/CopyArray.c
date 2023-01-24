@@ -1,6 +1,6 @@
 #include<stdio.h>
 int main(){
-
+    //afjjhsdjhfka
     int arr[]={33,22,55,44,21,33,44,77,88};
     int arr1[100];
     int even=0;
