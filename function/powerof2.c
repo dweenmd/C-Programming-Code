@@ -31,7 +31,7 @@ int checkPowerofTwo(int x)
       //checks whether a number is divisible by 2
       if(x % 2 != 0)
          return 0;
-         x /= 2;
+         x = x / 2;
    }
    return 1;
 }
