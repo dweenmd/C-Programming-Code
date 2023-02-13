@@ -1,46 +1,50 @@
+// C program for implementation of Bubble sort
 #include <stdio.h>
- 
-void bubble_sort(long [], long);
- 
+
+/*void swap(int *xp, int *yp)
+{
+    int temp = *xp;
+    *xp = *yp;
+    *yp = temp;
+} */
+
+// A function to implement bubble sort
+void bubbleSort(int arr[], int n)
+{
+    int i, j;
+    int *xp, *yp;
+    for (i = 0; i < n - 1; i++)
+
+        // Last i elements are already in place
+        for (j = 0; j < n - i - 1; j++)
+            if (arr[j] > arr[j + 1])
+            // swap(&arr[j], &arr[j + 1]);
+            {
+                xp=&arr[i];
+                yp=&arr[i+1];
+
+                int temp = *xp;
+                *xp = *yp;
+                *yp = temp;
+            }
+}
+
+/* Function to print an array */
+void printArray(int arr[], int size)
+{
+    int i;
+    for (i = 0; i < size; i++)
+        printf("%d ", arr[i]);
+    printf("\n");
+}
+
+// Driver program to test above functions
 int main()
 {
-  long array[100], n, c, d, swap;
- 
-  printf("Enter number of elements\n");
-  scanf("%ld", &n);
- 
-  printf("Enter %ld longegers\n", n);
- 
-  for (c = 0; c < n; c++)
-    scanf("%ld", &array[c]);
- 
-  bubble_sort(array, n);
- 
-  printf("Sorted list in ascending order:\n");
- 
-  for ( c = 0 ; c < n ; c++ )
-     printf("%ld\n", array[c]);
- 
-  return 0;
+    int arr[] = {5, 1, 4, 2, 8};
+    int n = sizeof(arr) / sizeof(arr[0]);
+    bubbleSort(arr, n);
+    printf("Sorted array: \n");
+    printArray(arr, n);
+    return 0;
 }
- 
-void bubble_sort(long list[], long n)
-{
-  long c, d, t;
- 
-  for (c = 0 ; c < ( n - 1 ); c++)
-  {
-    for (d = 0 ; d < n - c - 1; d++)
-    {
-      if (list[d] > list[d+1])
-      {
-        /* Swapping */
- 
-        t         = list[d];
-        list[d]   = list[d+1];
-        list[d+1] = t;
-      }
-    }
-  }
-}
- 

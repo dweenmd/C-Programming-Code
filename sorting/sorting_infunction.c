@@ -3,7 +3,7 @@
 
 #include <stdio.h>
 
-void swap(int* xp, int* yp)
+void swap(int *xp, int *yp)
 {
 	int temp = *xp;
 	*xp = *yp;
@@ -16,7 +16,8 @@ void selectionSort(int arr[], int n)
 	int i, j, min_idx;
 
 	// One by one move boundary of unsorted subarray
-	for (i = 0; i < n - 1; i++) {
+	for (i = 0; i < n - 1; i++)
+	{
 
 		// Find the minimum element in unsorted array
 		min_idx = i;
@@ -42,7 +43,7 @@ void printArray(int arr[], int size)
 // Driver code
 int main()
 {
-	int arr[] = { 0, 23, 14, 12, 9 };
+	int arr[] = {0, 23, 14, 12, 9};
 	int n = sizeof(arr) / sizeof(arr[0]);
 	printf("Original array: \n");
 	printArray(arr, n);
