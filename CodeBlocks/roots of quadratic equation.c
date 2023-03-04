@@ -13,28 +13,27 @@ int main()
     /* Find discriminant of the equation */
     discriminant = (b * b) - (4 * a * c);
 
-
     /* Find the nature of discriminant */
-    if(discriminant > 0)
+    if (discriminant > 0)
     {
-        root1 = (-b + sqrt(discriminant)) / (2*a);
-        root2 = (-b - sqrt(discriminant)) / (2*a);
+        root1 = (-b + sqrt(discriminant)) / (2 * a);
+        root2 = (-b - sqrt(discriminant)) / (2 * a);
 
         printf("Two distinct and real roots exists: %.2f and %.2f", root1, root2);
     }
-    else if(discriminant == 0)
+    else if (discriminant == 0)
     {
         root1 = root2 = -b / (2 * a);
 
         printf("Two equal and real roots exists: %.2f and %.2f", root1, root2);
     }
-    else if(discriminant < 0)
+    else if (discriminant < 0)
     {
         root1 = root2 = -b / (2 * a);
         imaginary = sqrt(-discriminant) / (2 * a);
 
         printf("Two distinct complex roots exists: %.2f + i%.2f and %.2f - i%.2f",
-                root1, imaginary, root2, imaginary);
+               root1, imaginary, root2, imaginary);
     }
 
     return 0;
