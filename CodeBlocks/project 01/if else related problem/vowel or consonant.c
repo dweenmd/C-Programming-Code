@@ -7,7 +7,7 @@ int main(){
        ||ch=='A'||ch=='E'||ch=='I'||ch=='O'||ch=='U' ){
         printf("The character is a vowel");
     }
-    else if((ch>='a'&& ch<='z')||(ch>='A'&& ch<='A'))
+    else if((ch>='a'&& ch<='z')||(ch>='A'&& ch<='Z'))
  {
        printf("The character is a consonent");
     }

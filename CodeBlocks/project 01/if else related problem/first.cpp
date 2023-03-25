@@ -1,6 +1,6 @@
-#include<iostream>
-int main(){
-    std::cout<<"hello world";
-    retun0;
-    
+#include <iostream>
+int main()
+{
+    std::cout << "hello world";
+    return 0;
 }
