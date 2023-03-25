@@ -20,7 +20,7 @@ int main(){
         x1=(-b/(2*a));
 
         x2=sqrt(-d)/(2*a);
-        printf("Roots are = %.2f+i%.2f and %.2f-i%.2f\n", x1,x2,x1,x2);
+        printf("Roots are = %.2f+%.2fi and %.2f-%.2fi \n", x1,x2,x1,x2);
     }
     return 0;
 

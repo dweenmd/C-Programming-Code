@@ -29,7 +29,7 @@ int main()
     {
         realPart = -b / (2 * a);
         imagPart = sqrt(-discriminant) / (2 * a);
-        printf("root1 = %.2lf and root2 = %.2f", (realPart + imagPart), (realPart - imagPart));
+        printf("root1 = %.2lfi and root2 = %.2fi", (realPart + imagPart), (realPart - imagPart));
     }
 
     return 0;
