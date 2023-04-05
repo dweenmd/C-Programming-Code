@@ -18,7 +18,7 @@ int main()
 
     }
     if (flag>=1)
-        printf("YES %d got full marks",flag);
+        printf("YES %d students got full marks",flag);
     else
         printf("NO");
 
