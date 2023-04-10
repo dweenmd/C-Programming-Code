@@ -15,6 +15,7 @@ int main()
     }
     else
     {
+        
         puts(name);
         printf("\n");
     }
