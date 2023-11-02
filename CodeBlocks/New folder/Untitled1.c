@@ -8,6 +8,7 @@ int main()
             gcd=i;
         }
     }
+  
     lcm=(n1*n2)/gcd;
     printf("The LCM of %d and %d is %d.",n1,n2,lcm);
 
